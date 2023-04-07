@@ -1,0 +1,61 @@
+.contact-container {
+    width: 61vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFEAC9;
+
+    p {
+        font-family: 'Elephant', sans-serif;
+        font-size: 2vw;
+        color: #B2FFD5;
+    }
+}
+
+.contact-title {
+    font-size: 2vw;
+    font-family: 'Elephant', sans-serif;
+    width: 30vw;
+
+    hr {
+        margin-top: 0;
+        background-color: #FFEAC9;
+        height: 1px;
+    }
+}
+
+.phone-number {
+    margin-bottom: 0;
+}
+
+.email {
+    margin-top: 0;
+}
+
+.social-media {
+    font-size: 2vw;
+    display: flex;
+    gap: 2vw;
+
+    a {
+        color: #FFEAC9;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+.footer {
+    position: absolute;
+    color: #F7F7F7;
+    font-size: 1vw;
+    top: 693vh;
+    font-family: 'Abhaya Libre', sans-serif;
+    text-align: center;
+  
+    p {
+        margin: 0 0 0.5vh 0;
+    }
+}

@@ -1,0 +1,36 @@
+.toolkit-container {
+    width: 61vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFEAC9;
+}
+
+.toolkit-title {
+    align-self: flex-end;
+    font-size: 2vw;
+    font-family: 'Elephant', sans-serif;
+    text-align: right;
+
+    hr {
+        margin-top: 0;
+        background-color: #FFEAC9;
+        width: 30vw;
+        height: 1px;
+    }
+}
+
+.toolkit {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 4vw;
+    column-gap: 6vw;
+    margin: 4vw 0;
+
+    img {
+        height: 4vw;
+        width: 4vw;
+        filter: invert(94%) sepia(9%) saturate(1569%) hue-rotate(315deg) brightness(104%) contrast(104%);
+    }
+}

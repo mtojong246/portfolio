@@ -1,0 +1,13 @@
+.nav-bar-options {
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 2vw 0 0;
+
+    span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,52 @@
+.home-container {
+    text-align: left;
+
+    p {
+        margin: 0;
+        color: #FFEAC9;
+    }
+
+    button {
+        font-family: 'Italiana', sans-serif;
+        font-size: 2vw;
+        color: #FFEAC9;
+        background: none;
+        border: 1px solid #FFEAC9;
+        padding: 0 0.75vw 0.25vw 0.75vw;
+        margin-top: 2vw;
+    }
+
+    button:hover {
+        color: rgba(0,0,0,0.5);
+        background-color: #FFEAC9;
+        cursor: pointer;
+    }
+}
+
+.home-title {
+    font-size: 8vw;
+    font-family: 'Elephant', sans-serif;
+}
+
+.home-description {
+    font-size: 2vw;
+    font-family: 'Abhaya Libre', sans-serif;
+
+    span {
+        font-family: 'Elephant', sans-serif;
+    }
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 1.5vh;
+    color: #F7F7F7;
+    font-size: 1vw;
+    font-family: 'Abhaya Libre', sans-serif;
+    text-align: center;
+    z-index: 1;
+
+    p {
+        margin: 0 0 0.5vh 0;
+    }
+}

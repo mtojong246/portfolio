@@ -1,0 +1,58 @@
+.project-three-container {
+    width: 61vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #FFEAC9;
+    margin-top: 6vw;
+}
+
+.project-three-image {
+    width: 40vw;
+    height: 30vw;
+    background-color: #D9D9D9;
+}
+
+.project-three-image:hover {
+    cursor: pointer;
+}
+
+.project-three-description-container {
+    width: 40vw;
+    text-align: right;
+    position: relative;
+    bottom: 12vw;
+    left: 21vw;
+
+    span {
+        font-size: 2vw;
+        font-family: 'Elephant', sans-serif;
+    }
+
+    a {
+        color: #FFEAC9;
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+.project-three-description {
+    padding: 1vw;
+    background-color: #A1B6F3;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: 'Abhaya Libre', sans-serif;
+
+    p {
+        margin: 0;
+    }
+
+    span {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.5vw;
+    }
+
+}
