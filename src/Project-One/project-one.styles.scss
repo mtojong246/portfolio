@@ -1,5 +1,5 @@
 .project-one-container {
-    width: 61vw;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,25 +17,83 @@
         margin-top: 0;
         background-color: #FFEAC9;
         height: 1px;
+        border: none;
     }
 }
 
-.project-one-image {
-    width: 40vw;
-    height: 30vw;
-    background-color: #D9D9D9;
+.project-one-image-container {
+    width: 55vw;
+    height: 31.4vw;
 }
 
-.project-one-image:hover {
-    cursor: pointer;
+.project-one-image {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.overlay-one {
+    position: absolute;
+    width: 54.75vw;
+    height: 31.25vw;
+    top: 3.7vw;
+    left: 0.155vw;
+    background: rgba(0,0,0,0);
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background 0.3s ease-in;
+
+    button {
+        font-size: 2vw;
+        padding: 1vw 2vw;
+        border: 0.3vw solid white;
+        border-radius: 20px;
+        background: none;
+        color: white;
+
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+
+    }
+
+    button:hover {
+        background: rgba(0,0,0,0.3);
+        cursor: pointer;
+    }
+}
+
+.project-one-screenshot {
+    position: absolute;
+    width: 100%;
+    height: 31.4vw;
+    top: 3.6vw;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.project-one-image-container:hover {
+    .project-one-screenshot {
+        opacity: 1;
+    }
+
+    .overlay-one {
+        background: rgba(0,0,0,0.3);
+
+        button {
+            opacity: 1;
+        }
+    }
 }
 
 .project-one-description-container {
     width: 40vw;
     text-align: right;
     position: relative;
-    bottom: 12vw;
-    left: 21vw;
 
     span {
         font-size: 2vw;
@@ -49,6 +107,10 @@
     a:hover {
         cursor:pointer;
     }
+}
+
+.web-link {
+    margin-left: 0.5vw;
 }
 
 .project-one-description {
@@ -67,4 +129,11 @@
         font-size: 1.5vw;
     }
 
+    hr {
+        background-color: #FFEAC9;
+        height: 1px;
+        border: none;
+    }
+
 }
+

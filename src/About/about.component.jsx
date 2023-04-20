@@ -1,5 +1,6 @@
 import './about.styles.scss';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Headshot from '../Screenshots/headshot.jpg';
 
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
                     </div>
                 </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInUp'>
-                <div className='about-image'></div>
+                <img src={Headshot} alt='headshot' className='about-image' />
             </AnimationOnScroll>
         </div>
     )

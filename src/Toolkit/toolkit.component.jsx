@@ -1,12 +1,5 @@
 import './toolkit.styles.scss';
-import Html from '../Icons/html5.svg';
-import Css from '../Icons/css3.svg';
-import Js from '../Icons/javascript.svg';
-import ReactJs from '../Icons/react.svg';
-import Node from '../Icons/nodedotjs.svg';
-import Sql from '../Icons/postgresql.svg';
-import Firebase from '../Icons/firebase.svg';
-import Figma from '../Icons/figma.svg';
+import { tools } from '../Data/data';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Toolkit = () => {
@@ -19,14 +12,14 @@ const Toolkit = () => {
                 </AnimationOnScroll>
             </div>
             <div className='toolkit'>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Html} alt='html5' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Css} alt='css3' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Js} alt='javascript' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={ReactJs} alt='react' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Node} alt='node' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Sql} alt='postgresql' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Firebase} alt='firebase' /></AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'><img src={Figma} alt='figma' /></AnimationOnScroll>
+            {tools.map(tool => (
+                <AnimationOnScroll animateIn='animate__fadeInLeft' className='tool-animation'>
+                    <div className='tool-label'>
+                        <span>{tool.label}</span>
+                    </div>
+                    <img src={tool.image} alt={`${tool.label}`} />
+                </AnimationOnScroll>
+            ))}
             </div>
         </div>
     )

@@ -1,18 +1,27 @@
 import './project-two.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Primordial from '../Screenshots/primordial_title_screen.svg';
+import PrimordialPage from '../Screenshots/primordial_screenshot.svg';
 
 
 const ProjectTwo = () => {
     return (
         <div className='project-two-container'>
             <AnimationOnScroll animateIn='animate__fadeInRight'>
-                <div className='project-two-image'></div>
+                <div className='project-two-image-container'>
+                    <img src={Primordial} alt='primordial' className='project-two-image'/>
+                    <img className='project-two-screenshot' src={PrimordialPage} alt='primordial-main' />
+                    <div className='overlay-two'>
+                        <button>Learn More</button>
+                    </div>
+                </div>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__fadeInLeft'>
+            <AnimationOnScroll animateIn='animate__fadeInLeft' className='animated-right'>
                 <div className='project-two-description-container'>
-                    <span>Title <a href={''}><FontAwesomeIcon icon={faGithub} /></a></span>
+                    <span>Primordial <a href={'https://github.com/mtojong246/primordial.git'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a><a href={'https://fascinating-pavlova-aa2ae2.netlify.app/'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='web-link'/></a></span>
                     <div className='project-two-description'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Ultrices gravida dictum fusce ut placerat orci.</p>
                         <hr />
