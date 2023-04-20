@@ -23,9 +23,9 @@ const ProjectThree = () => {
                 <div className='project-three-description-container'>
                     <span>Pantry <a href={'https://github.com/mtojong246/pantry-app.git'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a><a href={'https://mtojong246.github.io/pantry-app/'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='web-link'/></a></span>
                     <div className='project-three-description'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Ultrices gravida dictum fusce ut placerat orci.</p>
+                        <p>A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list.</p>
                         <hr />
-                        <span>skills</span>
+                        <span>#React #Sass #Node #PostgreSQL</span>
                     </div>
                 </div>
             </AnimationOnScroll>

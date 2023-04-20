@@ -27,9 +27,9 @@ const ProjectOne = () => {
                 <div className='project-one-description-container'>
                     <span>Knife Purveyor <a href={'https://github.com/mtojong246/knife-purveyor.git'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a><a href={'https://endearing-meringue-a41e20.netlify.app/'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='web-link'/></a></span>
                     <div className='project-one-description'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Ultrices gravida dictum fusce ut placerat orci.</p>
+                        <p>An e-commerce website re-design for a local knife shop located in Wake Forest, NC.</p>
                         <hr />
-                        <span>skills</span>
+                        <span>#React #Sass #Firebase #Stripe #GoogleMapAPI</span>
                     </div>
                 </div>
             </AnimationOnScroll>

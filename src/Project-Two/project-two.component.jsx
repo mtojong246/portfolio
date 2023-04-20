@@ -23,9 +23,9 @@ const ProjectTwo = () => {
                 <div className='project-two-description-container'>
                     <span>Primordial <a href={'https://github.com/mtojong246/primordial.git'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a><a href={'https://fascinating-pavlova-aa2ae2.netlify.app/'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='web-link'/></a></span>
                     <div className='project-two-description'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Ultrices gravida dictum fusce ut placerat orci.</p>
+                        <p>A simple point-and-click game, inspired by the popular mobile game "Little Alchemy 2".</p>
                         <hr />
-                        <span>skills</span>
+                        <span>#React #Sass</span>
                     </div>
                 </div>
             </AnimationOnScroll>
