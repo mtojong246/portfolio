@@ -1,6 +1,7 @@
 import './contact.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGoogle, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
@@ -10,7 +11,7 @@ const Contact = () => {
             <div className='contact-container' id="contact">
                 <AnimationOnScroll animateIn='animate__fadeInLeft'>
                     <div className='contact-title'>
-                        <span>Contact</span>
+                        <span>My Contact <FontAwesomeIcon icon={faPaperPlane} /></span>
                         <hr />
                     </div>
                     <p className='phone-number'>(919)-665-9606</p>

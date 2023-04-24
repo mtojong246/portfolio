@@ -1,0 +1,83 @@
+.purveyor-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    padding: 1.5vw 0 0 2vw;
+    position: fixed;
+    z-index: 1;
+    top: 0.5vw;
+}
+
+.purveyor-logo {
+    font-size: 5vw;
+    font-family: 'Italiana', sans-serif;
+    color: #FFEAC9;
+}
+
+.purveyor-logo:hover {
+    cursor: pointer;
+}
+
+.return-one {
+    button {
+        font-family: 'Italiana', sans-serif;
+        font-size: 2vw;
+        color: #FFEAC9;
+        background: none;
+        padding: 0.5vw 1vw;
+        border-radius: 20px;
+        border: 1px solid #FFEAC9;
+    }
+
+    button:hover {
+        color: rgba(0,0,0,0.5);
+        background-color: #FFEAC9;
+        cursor: pointer;
+    }
+}
+
+.purveyor-content {
+    position: relative;
+}
+
+
+.purveyor-screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0 2vw 0;
+}
+
+
+.purveyor-image-container {
+    width: 55vw;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.purveyor-paragraphs {
+    text-align: left;
+    padding: 0 22vw;
+
+    p {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.4vw;
+        color: #FFEAC9;  
+    }
+}
+
+.caption {
+    font-size: 1vw;
+    color: #616161;
+}
+
+
+
+
+
+

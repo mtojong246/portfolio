@@ -1,0 +1,20 @@
+.return-two {
+
+    padding: 2vw 0 0 2vw;
+
+    button {
+        font-family: 'Italiana', sans-serif;
+        font-size: 2vw;
+        color: #FFEAC9;
+        background: none;
+        padding: 0.5vw 1vw;
+        border-radius: 20px;
+        border: 1px solid #FFEAC9;
+    }
+
+    button:hover {
+        color: rgba(0,0,0,0.5);
+        background-color: #FFEAC9;
+        cursor: pointer;
+    }
+}

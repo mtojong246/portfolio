@@ -107,6 +107,12 @@
     a:hover {
         cursor:pointer;
     }
+
+    img {
+        height: 1.7vw;
+        width: 1.7vw;
+        filter: invert(88%) sepia(22%) saturate(469%) hue-rotate(330deg) brightness(105%) contrast(101%);
+    }
 }
 
 .web-link {
@@ -135,5 +141,29 @@
         border: none;
     }
 
+}
+
+.button-link-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    margin-top: 0.5vw;
+
+    button {
+        font-size: 1vw;
+        font-family: 'Abhaya Libre', sans-serif;
+        color: #B2FFD5;
+        background: none;
+        padding: 0.5vw 1vw;
+        border: 1px solid #B2FFD5;
+        border-radius: 20px;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #B2FFD5;
+        color: #A1B6F3;
+    }
 }
 

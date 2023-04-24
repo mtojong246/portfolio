@@ -14,6 +14,8 @@
         border: 1px solid #FFEAC9;
         padding: 0 0.75vw 0.25vw 0.75vw;
         margin-top: 2vw;
+        z-index: 2;
+        position: relative;
     }
 
     button:hover {
@@ -34,6 +36,7 @@
 
     span {
         font-family: 'Elephant', sans-serif;
+        color: #B2FFD5;
     }
 }
 

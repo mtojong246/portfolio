@@ -1,0 +1,42 @@
+.overlay {
+    height: 700vh;
+    width: 100%;
+    background-color: rgba(86, 98, 149,0.3);
+    position: absolute;
+  }
+  
+  
+  .nav-bar-container {
+    font-family: 'Italiana', sans-serif;
+    font-size: 2vw;
+    color: #FFEAC9;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 5vw;
+    padding: 2vw 0 0 2vw;
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  .center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
+  
+  
+  

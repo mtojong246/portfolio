@@ -1,13 +1,15 @@
 import './toolkit.styles.scss';
 import { tools } from '../Data/data';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 
 const Toolkit = () => {
     return (
         <div className='toolkit-container'> 
             <div className='toolkit-title'>
                 <AnimationOnScroll animateIn='animate__fadeInRight'>
-                    <span>Toolkit</span>
+                    <span>My Toolkit <FontAwesomeIcon icon={faScrewdriverWrench} /></span>
                     <hr />
                 </AnimationOnScroll>
             </div>

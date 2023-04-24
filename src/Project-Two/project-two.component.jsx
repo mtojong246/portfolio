@@ -1,10 +1,10 @@
 import './project-two.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faDrumstickBite } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import Primordial from '../Screenshots/primordial_title_screen.svg';
-import PrimordialPage from '../Screenshots/primordial_screenshot.svg';
+import Pantry from '../Screenshots/pantry_title_screen.svg';
+import PantryPage from '../Screenshots/pantry_screenshot.svg';
+import { Link } from 'react-router-dom';
 
 
 const ProjectTwo = () => {
@@ -12,20 +12,24 @@ const ProjectTwo = () => {
         <div className='project-two-container'>
             <AnimationOnScroll animateIn='animate__fadeInRight'>
                 <div className='project-two-image-container'>
-                    <img src={Primordial} alt='primordial' className='project-two-image'/>
-                    <img className='project-two-screenshot' src={PrimordialPage} alt='primordial-main' />
+                    <img src={Pantry} alt='pantry' className='project-two-image'/>
+                    <img className='project-two-screenshot' src={PantryPage} alt='pantry-main' />
                     <div className='overlay-two'>
-                        <button>Learn More</button>
+                        <Link to='/pantry'><button>Learn More</button></Link>
                     </div>
                 </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInLeft' className='animated-right'>
                 <div className='project-two-description-container'>
-                    <span>Primordial <a href={'https://github.com/mtojong246/primordial.git'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a><a href={'https://fascinating-pavlova-aa2ae2.netlify.app/'} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='web-link'/></a></span>
+                    <span>Pantry <FontAwesomeIcon icon={faDrumstickBite} /></span>
                     <div className='project-two-description'>
-                        <p>A simple point-and-click game, inspired by the popular mobile game "Little Alchemy 2".</p>
+                        <p>A full-stack website that generates recipes based on items in your pantry. Includes a customizable nutrition tracker, food log and grocery list. </p>
+                        <div className='button-link-container'>
+                            <a href={'https://github.com/mtojong246/pantry-app.git'} target="_blank" rel="noopener noreferrer"><button>Source Code</button></a>
+                            <a href={'https://mtojong246.github.io/pantry-app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
+                        </div>
                         <hr />
-                        <span>#React #Sass</span>
+                        <span>#React #Sass #Node #PostgreSQL</span>
                     </div>
                 </div>
             </AnimationOnScroll>
