@@ -60,6 +60,11 @@
         opacity: 1;   
         animation: grow 300ms ease-in-out forwards;
     }
+
+    img {
+        animation: swing;
+        animation-duration: 1s;
+    }
 }
 
 @keyframes grow {
@@ -70,4 +75,37 @@
     100% {
         transform: scale(1);
     }
+}
+
+@media screen and (max-width: 480px) {
+    .toolkit-container {
+        width: 80vw;
+    }
+    
+    .toolkit-title {
+        font-size: 8vw;    
+
+        hr {
+            width: 80vw;
+        }
+    }
+    
+    .toolkit {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 10vw;
+        column-gap: 10vw;
+        margin: 6vw 0;
+    
+        img {
+            height: 12vw;
+            width: 12vw;
+            filter: invert(94%) sepia(9%) saturate(1569%) hue-rotate(315deg) brightness(104%) contrast(104%);
+        }
+    }
+    
+    .tool-animation {
+        width: 12vw;
+    }
+
 }

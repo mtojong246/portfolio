@@ -16,12 +16,37 @@
         margin-top: 2vw;
         z-index: 2;
         position: relative;
-    }
+        transition: all .3s;
+        overflow: hidden;
 
-    button:hover {
-        color: rgba(0,0,0,0.5);
-        background-color: #FFEAC9;
-        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: none;
+            z-index: -2;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #FFEAC9;
+            transition: all .3s;
+            z-index: -1;
+          }
+          &:hover {
+            color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            &:before {
+              width: 100%;
+            }
+          }
     }
 }
 
@@ -51,5 +76,38 @@
 
     p {
         margin: 0 0 0.5vh 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-title-container {
+        margin: 4vw 0;
+    }
+
+    .home-container {
+        text-align: center;
+
+        button {
+            font-size: 6vw;
+            padding: 0 2vw 1vw 2vw;
+            margin-top: 6vw;
+        }
+
+        p {
+            padding: 0 10vw;
+        }
+    }
+
+    .home-title {
+        font-size: 16vw;
+    }
+    
+    .home-description {
+        font-size: 6vw;
+    }
+    
+    .scroll-arrow {
+        font-size: 4vw;
+
     }
 }

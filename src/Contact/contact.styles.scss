@@ -35,16 +35,54 @@
 }
 
 .social-media {
-    font-size: 2vw;
     display: flex;
-    gap: 2vw;
-
-    a {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1vw;
+    
+    button {
+        font-size: 1.5vw;
+        font-family: 'Abhaya Libre', sans-serif;
         color: #FFEAC9;
-    }
+        border-radius: 20px;
+        background: none;
+        padding: 0.5vw 1vw;
+        border: 1px solid #FFEAC9;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
 
-    a:hover {
-        cursor: pointer;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: none;
+            border-radius: 20px;
+            z-index: -2;
+          }
+          &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: #FFEAC9;
+            transition: all .3s;
+            border-radius: 20px;
+            z-index: -1;
+          }
+          &:hover {
+            color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            &:before {
+              width: 100%;
+            }
+          }
     }
 }
 
@@ -58,5 +96,87 @@
   
     p {
         margin: 0 0 0.5vh 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-container {
+        width: 80vw;
+    
+        p {
+            font-family: 'Elephant', sans-serif;
+            font-size: 8vw;
+        }
+    }
+    
+    .contact-title {
+        font-size: 8vw;
+        font-family: 'Elephant', sans-serif;
+        width: 80vw;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 3vw;
+        
+        button {
+            font-size: 6vw;
+            font-family: 'Abhaya Libre', sans-serif;
+            color: #FFEAC9;
+            border-radius: 20px;
+            background: none;
+            padding: 1vw 3vw;
+            border: 1px solid #FFEAC9;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+    
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: none;
+                border-radius: 20px;
+                z-index: -2;
+              }
+              &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background-color: #FFEAC9;
+                transition: all .3s;
+                border-radius: 20px;
+                z-index: -1;
+              }
+              &:hover {
+                color: rgba(0,0,0,0.5);
+                cursor: pointer;
+                &:before {
+                  width: 100%;
+                }
+              }
+        }
+    }
+    
+    .footer {
+        position: absolute;
+        color: #F7F7F7;
+        font-size: 4vw;
+        top: 703vh;
+        font-family: 'Abhaya Libre', sans-serif;
+        text-align: center;
+      
+        p {
+            margin: 0 0 0.5vh 0;
+        }
     }
 }

@@ -37,9 +37,39 @@
     }
 }
 
+.purveyor-blog-title {
+    padding-left: 22vw;
+    font-size: 4vw;
+    text-decoration: underline;
+    font-family: 'Italiana', sans-serif;
+    color: #FFEAC9;
+    margin-top: 2vw;
+
+    img {
+        height: 4.2vw;
+        width: 4.2vw;
+        filter: invert(88%) sepia(22%) saturate(469%) hue-rotate(330deg) brightness(105%) contrast(101%);
+    }
+}
+
+.purveyor-blog-subtitle {
+    padding: 0 22vw;
+    font-size: 2vw;
+    font-family: 'Italiana', sans-serif;
+    color: #B2FFD5;
+    margin-bottom: 4vw;
+    
+    p {
+        margin: 0;
+    }
+}
+
 .purveyor-content {
     position: relative;
+
 }
+
+
 
 
 .purveyor-screenshots {
@@ -69,12 +99,20 @@
         font-size: 1.4vw;
         color: #FFEAC9;  
     }
+
+    span {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.4vw;
+        color: #B2FFD5;
+    }
 }
 
 .caption {
     font-size: 1vw;
-    color: #616161;
+    color: #B2FFD5;
 }
+
+
 
 
 

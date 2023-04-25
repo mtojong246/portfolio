@@ -1,6 +1,5 @@
 import './contact.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faGoogle, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
@@ -18,11 +17,9 @@ const Contact = () => {
                     <p className='email'>mtojong@gmail.com</p>
                 </AnimationOnScroll>
                 <div className='social-media'>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href={''}><FontAwesomeIcon icon={faLinkedin} /></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href={''}><FontAwesomeIcon icon={faGithub} /></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href={''}><FontAwesomeIcon icon={faGoogle} /></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href={''}><FontAwesomeIcon icon={faFacebook} /></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href={''}><FontAwesomeIcon icon={faInstagram} /></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='https://www.linkedin.com/in/melanie-tojong-4b5149158/' target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='https://github.com/mtojong246' target="_blank" rel="noopener noreferrer"><button>Github</button></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='mailto:mtojong@gmail.com'><button>Gmail</button></a></AnimationOnScroll>
                 </div>
             </div>
             <div className='footer'>

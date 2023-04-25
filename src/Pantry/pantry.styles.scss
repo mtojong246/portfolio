@@ -1,6 +1,29 @@
-.return-two {
+.pantry-content {
+    position: relative;
+}
 
-    padding: 2vw 0 0 2vw;
+.pantry-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vw;
+    padding: 1.5vw 0 0 2vw;
+    position: fixed;
+    z-index: 1;
+    top: 0.5vw;
+}
+
+.pantry-logo {
+    font-size: 5vw;
+    font-family: 'Italiana', sans-serif;
+    color: #FFEAC9;
+}
+
+.pantry-logo:hover {
+    cursor: pointer;
+}
+
+.return-two {
 
     button {
         font-family: 'Italiana', sans-serif;
@@ -17,4 +40,72 @@
         background-color: #FFEAC9;
         cursor: pointer;
     }
+
 }
+
+.pantry-blog-title {
+    padding-left: 22vw;
+    font-size: 4vw;
+    text-decoration: underline;
+    font-family: 'Italiana', sans-serif;
+    color: #FFEAC9;
+    margin-top: 2vw;
+}
+
+.pantry-blog-subtitle {
+    padding: 0 22vw;
+    font-size: 2vw;
+    font-family: 'Italiana', sans-serif;
+    color: #B2FFD5;
+    margin-bottom: 4vw;
+    
+    p {
+        margin: 0;
+    }
+}
+
+.pantry-screenshots {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4vw 0 2vw 0;
+}
+
+.pantry-image-container {
+    width: 55vw;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.pantry-paragraphs {
+    text-align: left;
+    padding: 0 22vw;
+
+    p {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.4vw;
+        color: #FFEAC9;  
+    }
+
+    span {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.4vw;
+        color: #B2FFD5;
+    }
+}
+
+
+.overlay-page {
+    padding: 1vh 0;
+    width: 100%;
+    background-color: rgba(86, 98, 149,0.3);
+    position: absolute;
+}
+
+
+
+

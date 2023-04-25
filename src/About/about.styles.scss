@@ -25,6 +25,10 @@
     }
 }
 
+#so-far {
+    color: #B2FFD5;
+}
+
 .about-description {
     height: 30vw;
     font-size: 1.48vw;
@@ -35,10 +39,42 @@
     p:first-child {
         margin-top: 0;
     }
+
+    span {
+        color: #B2FFD5;
+    }
 }
 
 .about-image {
     background-color: #D9D9D9;
     width: 30vw;
     height: 30vw;
+}
+
+@media screen and (max-width: 480px) {
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-title, .about-description {
+        width: 80vw;
+    }
+    
+    .about-title {
+        font-size: 8vw;
+    }
+    
+    .about-description {
+        height: 100%;
+        font-size: 6vw;
+    }
+    
+    .about-image {
+        width: 80vw;
+        height: 80vw;
+    }
+    
 }

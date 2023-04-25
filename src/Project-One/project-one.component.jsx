@@ -28,7 +28,7 @@ const ProjectOne = () => {
                 <div className='project-one-description-container'>
                     <span>Knife Purveyor <img src={Knife} alt='knife' /></span>
                     <div className='project-one-description'>
-                        <p>An e-commerce website re-design for a local knife shop located in Wake Forest, NC.</p>
+                        <p>An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.</p>
                         <div className='button-link-container'>
                             <a href={'https://github.com/mtojong246/knife-purveyor.git'} target="_blank" rel="noopener noreferrer"><button>Source Code</button></a>
                             <a href={'https://endearing-meringue-a41e20.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>

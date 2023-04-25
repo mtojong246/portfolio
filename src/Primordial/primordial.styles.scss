@@ -43,6 +43,27 @@
 
 }
 
+.primordial-blog-title {
+    padding-left: 22vw;
+    font-size: 4vw;
+    text-decoration: underline;
+    font-family: 'Italiana', sans-serif;
+    color: #FFEAC9;
+    margin-top: 2vw;
+}
+
+.primordial-blog-subtitle {
+    padding-left: 22vw;
+    font-size: 2vw;
+    font-family: 'Italiana', sans-serif;
+    color: #B2FFD5;
+    margin-bottom: 4vw;
+    
+    p {
+        margin: 0;
+    }
+}
+
 .primordial-screenshots {
     display: flex;
     flex-direction: column;
@@ -68,6 +89,12 @@
         font-family: 'Abhaya Libre', sans-serif;
         font-size: 1.4vw;
         color: #FFEAC9;  
+    }
+
+    span {
+        font-family: 'Abhaya Libre', sans-serif;
+        font-size: 1.4vw;
+        color: #B2FFD5;
     }
 }
 

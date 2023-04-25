@@ -34,8 +34,31 @@
     justify-content: center;
     align-items: center;
   }
+
   
   
+@media screen and (max-width: 480px) {  
+  .logo {
+    font-size: 20vw;
+  }
+  
+  
+  .center {
+    height: 100vh;
+  }
+
+  .long {
+    height: 150vh;
+  }
+
+  .short {
+    height: 80vh;
+  }
+
+  .overlay {
+    height: 710vh;
+  }
+}
   
   
   

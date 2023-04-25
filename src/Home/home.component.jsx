@@ -6,8 +6,10 @@ const Home = () => {
     return (
         <>
             <div className='home-container' id="home">
-                <p className='home-title animate__animated animate__fadeInLeft' >Hi, my</p>
-                <p className='home-title animate__animated animate__fadeInLeft'>name is Melanie.</p>
+                <div className='home-title-container'>
+                    <p className='home-title animate__animated animate__fadeInLeft' >Hi, my</p>
+                    <p className='home-title animate__animated animate__fadeInLeft'>name is Melanie.</p>
+                </div>
                 <p className='home-description animate__animated animate__flipInX'>I'm a front end web developer with a strong passion for <span>discovery</span> and <span>innovation</span>.</p>
                 <button className='animate__animated animate__flipInX'>resume</button>
             </div>

@@ -8,8 +8,14 @@ import ProjectTwo from '../Project-Two/project-two.component';
 import ProjectThree from '../Project-Three/project-three.component';
 import Contact from '../Contact/contact.component';
 import { Link } from 'react-scroll';
+import { useEffect } from 'react';
 
 const All = () => {
+
+  useEffect(() => {
+      window.scrollTo(0, 0)
+  }, []);
+
     return (
     <>
       <div className='overlay'></div>
@@ -23,10 +29,10 @@ const All = () => {
         <div className='center'>
           <Home />
         </div>
-        <div className='center'>
+        <div className='center long'>
           <About />
         </div>
-        <div className='center'>
+        <div className='center short'>
           <Toolkit />
         </div>
         <div className='center'>
@@ -38,7 +44,7 @@ const All = () => {
         <div className='center'>
           <ProjectThree />
         </div>
-        <div className='center'>
+        <div className='center short'>
           <Contact />
         </div>
       </>
