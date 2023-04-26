@@ -5,6 +5,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Primordial from '../Screenshots/primordial_title_screen.svg';
 import PrimordialPage from '../Screenshots/primordial_screenshot.svg';
 import { Link } from 'react-router-dom';
+import Mobile1 from '../Screenshots/primordial_mobile.svg';
 
 
 const ProjectThree = () => {
@@ -12,7 +13,8 @@ const ProjectThree = () => {
         <div className='project-three-container'>
             <AnimationOnScroll animateIn='animate__fadeInLeft'>
                 <div className='project-three-image-container'>
-                    <img className='project-three-image' src={Primordial} alt='primordial'/>
+                    <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
+                    <img className='project-three-image' src={`${window.innerWidth > 480 ? Primordial : Mobile1}`} alt='primordial'/>
                     <img className='project-three-screenshot' src={PrimordialPage} alt='primordial-main' />
                     <div className='overlay-three'>
                         <Link to='/primordial'><button>Learn More</button></Link>
@@ -21,7 +23,7 @@ const ProjectThree = () => {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left'>
                 <div className='project-three-description-container'>
-                    <span>Primordial <FontAwesomeIcon icon={faFlask} /></span>
+                    <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
                     <div className='project-three-description'>
                         <p>A simple point-and-click game, inspired by the popular mobile app "Little Alchemy 2".</p>
                         <div className='button-link-container'>

@@ -4,6 +4,7 @@ import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import KnifePurveyor from '../Screenshots/knife_purveyor_screenshot.svg';
 import KnifePurveyorPage from '../Screenshots/knife_purveyor_shop.svg';
+import Mobile1 from '../Screenshots/knife_purveyor_mobile.svg';
 import { Link } from 'react-router-dom';
 import Knife from '../Screenshots/knife-fill-svgrepo-com.svg';
 
@@ -17,7 +18,8 @@ const ProjectOne = () => {
                     <hr />
                 </div>
                 <div className='project-one-image-container'>
-                    <img src={KnifePurveyor} alt='knife-purveyor' className='project-one-image' />
+                    <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Knife Purveyor <img src={Knife} id='knife' alt='knife' style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}/></span>
+                    <img src={`${window.innerWidth > 480 ? KnifePurveyor : Mobile1}`} alt='knife-purveyor' className='project-one-image' />
                     <img className='project-one-screenshot' src={KnifePurveyorPage} alt='knife-purveyor-main' />
                     <div className='overlay-one'>
                         <Link to='/knife-purveyor'><button>Learn More</button></Link>
@@ -26,7 +28,7 @@ const ProjectOne = () => {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left'>
                 <div className='project-one-description-container'>
-                    <span>Knife Purveyor <img src={Knife} alt='knife' /></span>
+                    <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Knife Purveyor <img src={Knife} alt='knife' style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}/></span>
                     <div className='project-one-description'>
                         <p>An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.</p>
                         <div className='button-link-container'>

@@ -204,14 +204,28 @@
     }
     
     .project-one-title {
-        font-size: 8vw;
+        font-size: 12vw;
         width: 80vw;
         font-family: 'Italiana', sans-serif;
+        margin-bottom: 10vw;
     }
     
     .project-one-image-container {
         width: 80vw;
-        height: 50vw;
+        height: 150vw;
+
+        span {
+            font-size: 10vw;
+            font-family: 'Italiana', sans-serif;
+        }
+    
+        #knife {
+            height: 10.2vw;
+            width: 10.2vw;
+            filter: invert(88%) sepia(22%) saturate(469%) hue-rotate(330deg) brightness(105%) contrast(101%);
+        }
+
+        
     }
     
     .overlay-one {
@@ -276,6 +290,8 @@
         width: 80vw;
         text-align: right;
         position: relative;
+        margin-top: 10vw;
+
     
         span {
             font-size: 6vw;
@@ -293,8 +309,9 @@
     }
     
     .project-one-description {
-        padding: 3vw;
+        padding: 5vw;
         font-size: 6vw;
+        
     
         p {
             margin: 0;
@@ -306,16 +323,20 @@
             font-weight: normal;
         }
 
+        hr {
+            margin: 5vw 0;
+        }
+
     
     }
     
     .button-link-container {
-        gap: 3vw;
-        margin-top: 1vw;
+        justify-content: space-evenly;
+        margin-top: 3vw;
     
         button {
-            font-size: 5vw;
-            padding: 1vw 4vw;    
+            font-size: 4.5vw;
+            padding: 2vw 4vw;    
         }
     }
 }

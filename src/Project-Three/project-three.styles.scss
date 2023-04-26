@@ -141,7 +141,12 @@
     
     .project-three-image-container {
         width: 80vw;
-        height: 50vw;
+        height: 150vw;
+
+        span {
+            font-size: 10vw;
+            font-family: 'Italiana', sans-serif;
+        }
     
         .overlay-three {
             position: absolute;
@@ -206,6 +211,7 @@
     
     .project-three-description-container {
         width: 80vw;
+        margin-top: 10vw;
     
         span {
             font-size: 6vw;
@@ -215,13 +221,17 @@
     }
     
     .project-three-description {
-        padding: 3vw;
+        padding: 5vw;
         font-size: 6vw;
     
         span {
             font-family: 'Abhaya Libre', sans-serif;
             font-size: 6vw;
             font-weight: normal;
+        }
+
+        hr {
+            margin: 5vw 0;
         }
     
     }

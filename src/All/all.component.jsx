@@ -32,19 +32,19 @@ const All = () => {
         <div className='center long'>
           <About />
         </div>
-        <div className='center short'>
+        <div className='center'>
           <Toolkit />
         </div>
-        <div className='center'>
+        <div className='center long'>
           <ProjectOne />
         </div>
-        <div className='center'>
+        <div className='center long'>
           <ProjectTwo />
         </div>
-        <div className='center'>
+        <div className='center long'>
           <ProjectThree />
         </div>
-        <div className='center short'>
+        <div className='center'>
           <Contact />
         </div>
       </>
