@@ -6,6 +6,7 @@ import Pantry from '../Screenshots/pantry_title_screen.svg';
 import PantryPage from '../Screenshots/pantry_screenshot.svg';
 import { Link } from 'react-router-dom';
 import Mobile1 from '../Screenshots/pantry_mobile.svg';
+import Mobile2 from '../Screenshots/pantry_mobile_main.svg'
 
 
 const ProjectTwo = () => {
@@ -15,7 +16,7 @@ const ProjectTwo = () => {
                 <div className='project-two-image-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Pantry <FontAwesomeIcon icon={faDrumstickBite} /></span>
                     <img src={`${window.innerWidth > 480 ? Pantry : Mobile1}`} alt='pantry' className='project-two-image'/>
-                    <img className='project-two-screenshot' src={PantryPage} alt='pantry-main' />
+                    <img className='project-two-screenshot' src={`${window.innerWidth > 480 ? PantryPage : Mobile2}`} alt='pantry-main' />
                     <div className='overlay-two'>
                         <Link to='/pantry'><button>Learn More</button></Link>
                     </div>

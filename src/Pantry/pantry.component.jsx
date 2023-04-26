@@ -5,6 +5,8 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
 import ImgOne from '../Screenshots/pantry_screenshot.svg';
 import ImgTwo from '../Screenshots/pantry_food_log.svg';
+import MobileOne from '../Screenshots/pantry_mobile_main.svg';
+import MobileTwo from '../Screenshots/pantry_mobile_log.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDrumstickBite } from '@fortawesome/free-solid-svg-icons';
 
@@ -37,7 +39,7 @@ const Pantry = () => {
                 </div>
                 <div className='pantry-screenshots animate__animated animate__fadeInUp'>
                     <div className='pantry-image-container'>
-                        <img src={ImgOne} alt='pantry-screenshot-one' />
+                        <img src={`${window.innerWidth > 480 ? ImgOne : MobileOne}`} alt='pantry-screenshot-one' />
                     </div>
                     <div className='caption'>
                         <p>Pantry Page</p>
@@ -53,7 +55,7 @@ const Pantry = () => {
                 <AnimationOnScroll animateIn='animate__fadeInRight'>
                     <div className='pantry-screenshots'>
                         <div className='pantry-image-container'>
-                            <img src={ImgTwo} alt='pantry-screenshot-two' />
+                            <img src={`${window.innerWidth > 480 ? ImgTwo : MobileTwo}`} alt='pantry-screenshot-two' />
                         </div>
                         <div className='caption'>
                             <p>Food Log</p>

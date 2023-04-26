@@ -2,6 +2,8 @@ import './primordial.styles.scss';
 import { Link } from 'react-router-dom';
 import ImgOne from '../Screenshots/primordial_screenshot.svg';
 import ImgTwo from '../Screenshots/primordial_screenshot2.svg';
+import MobileOne from '../Screenshots/primordial_mobile_main.svg';
+import MobileTwo from '../Screenshots/primordial_mobile_enc.svg';
 import { useEffect } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
@@ -38,7 +40,7 @@ const Primordial = () => {
                 </div>
                 <div className='primordial-screenshots animate__animated animate__fadeInUp'>
                     <div className='primordial-image-container'>
-                        <img src={ImgOne} alt='primordial-screenshot-one' />
+                        <img src={`${window.innerWidth > 480 ? ImgOne : MobileOne}`} alt='primordial-screenshot-one' />
                     </div>
                     <div className='caption'>
                         <p>Main Page</p>
@@ -54,7 +56,7 @@ const Primordial = () => {
                 <AnimationOnScroll animateIn='animate__fadeInRight'>
                     <div className='primordial-screenshots'>
                         <div className='primordial-image-container'>
-                            <img src={ImgTwo} alt='primordial-screenshot-two' />
+                            <img src={`${window.innerWidth > 480 ? ImgTwo : MobileTwo}`} alt='primordial-screenshot-two' />
                         </div>
                         <div className='caption'>
                             <p>Encyclopedia</p>

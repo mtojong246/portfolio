@@ -6,6 +6,7 @@ import Primordial from '../Screenshots/primordial_title_screen.svg';
 import PrimordialPage from '../Screenshots/primordial_screenshot.svg';
 import { Link } from 'react-router-dom';
 import Mobile1 from '../Screenshots/primordial_mobile.svg';
+import Mobile2 from '../Screenshots/primordial_mobile_main.svg';
 
 
 const ProjectThree = () => {
@@ -15,7 +16,7 @@ const ProjectThree = () => {
                 <div className='project-three-image-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
                     <img className='project-three-image' src={`${window.innerWidth > 480 ? Primordial : Mobile1}`} alt='primordial'/>
-                    <img className='project-three-screenshot' src={PrimordialPage} alt='primordial-main' />
+                    <img className='project-three-screenshot' src={`${window.innerWidth > 480 ? PrimordialPage : Mobile2}`} alt='primordial-main' />
                     <div className='overlay-three'>
                         <Link to='/primordial'><button>Learn More</button></Link>
                     </div>

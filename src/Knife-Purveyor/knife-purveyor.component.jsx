@@ -2,6 +2,8 @@ import './knife-purveyor.styles.scss';
 import { Link } from 'react-router-dom';
 import ImgOne from '../Screenshots/knife_purveyor_shop.svg';
 import ImgTwo from '../Screenshots/knife_purveyor_contact.svg';
+import MobileOne from '../Screenshots/purveyor_mobile_shop.svg';
+import MobileTwo from '../Screenshots/purveyor_mobile_contact.svg';
 import { useEffect } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
@@ -37,7 +39,7 @@ const KnifePurveyor = () => {
                 </div>
                 <div className='purveyor-screenshots animate__animated animate__fadeInUp'>
                     <div className='purveyor-image-container'>
-                        <img src={ImgOne} alt='shop-page' />
+                        <img src={`${window.innerWidth > 480 ? ImgOne : MobileOne}`} alt='shop-page' />
                     </div>
                     <div className='purveyor-image-caption'>
                         <p className='caption'>Shop Page</p>
@@ -52,7 +54,7 @@ const KnifePurveyor = () => {
                 <AnimationOnScroll animateIn='animate__fadeInRight' duration={1.5}>
                     <div className='purveyor-screenshots'>
                         <div className='purveyor-image-container'>
-                            <img src={ImgTwo} alt='contact-page' />
+                            <img src={`${window.innerWidth > 480 ? ImgTwo : MobileTwo}`} alt='contact-page' />
                         </div>
                         <div className='purveyor-image-caption'>
                             <p className='caption'>Contact Page</p>
