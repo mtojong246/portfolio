@@ -100,10 +100,15 @@
 
     .home-title {
         font-size: 16vw;
+        font-family: 'Italiana', sans-serif;
     }
     
     .home-description {
         font-size: 6vw;
+
+        span {
+            font-family: 'Italiana', sans-serif;
+        }
     }
     
     .scroll-arrow {

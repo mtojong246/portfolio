@@ -107,5 +107,69 @@
 }
 
 
+@media screen and (max-width: 480px) {
+    .pantry-logo {
+        font-size: 20vw;
+    }
+    
+    .return-two {
+    
+        button {
+            font-size: 10vw;
+            padding: 1vw 3vw;
+        }
+    
+    }
+    
+    .pantry-blog-title {
+        padding-left: 15vw;
+        font-size: 15vw;
+        margin-top: 24vw;
+    }
+    
+    .pantry-blog-subtitle {
+        padding: 0 15vw;
+        font-size: 8vw;
+        
+        p {
+            margin: 0;
+        }
+    }
+    
+    .pantry-screenshots {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 4vw 0 2vw 0;
+    }
+    
+    .pantry-image-container {
+        width: 70vw;
+    
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .pantry-paragraphs {
+        text-align: left;
+        padding: 0 15vw;
+    
+        p {
+            font-family: 'Abhaya Libre', sans-serif;
+            font-size: 6vw;
+            color: #FFEAC9;  
+        }
+    
+        span {
+            font-family: 'Abhaya Libre', sans-serif;
+            font-size: 6vw;
+            color: #B2FFD5;
+        }
+    }
+}
+
 
 
