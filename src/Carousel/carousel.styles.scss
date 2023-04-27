@@ -59,3 +59,9 @@
 .right-arrow {
     right: 24px;
 }
+
+@media (hover: none) and (pointer: coarse) {
+    .left-arrow, .right-arrow {
+        display: none;
+    }
+}
