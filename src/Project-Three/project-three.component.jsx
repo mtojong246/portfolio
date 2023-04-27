@@ -2,11 +2,11 @@ import './project-three.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import Primordial from '../Screenshots/primordial_title_screen.svg';
-import PrimordialPage from '../Screenshots/primordial_screenshot.svg';
+import Primordial from '../Screenshots/primordial_main.png';
+import PrimordialPage from '../Screenshots/primordial_home.png';
 import { Link } from 'react-router-dom';
-import Mobile1 from '../Screenshots/primordial_mobile.svg';
-import Mobile2 from '../Screenshots/primordial_mobile_main.svg';
+import Mobile1 from '../Screenshots/primordial_mobile_main.png';
+import Mobile2 from '../Screenshots/primordial_mobile_home.png';
 
 
 const ProjectThree = () => {

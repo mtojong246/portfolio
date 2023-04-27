@@ -1,13 +1,24 @@
 import './knife-purveyor.styles.scss';
 import { Link } from 'react-router-dom';
-import ImgOne from '../Screenshots/knife_purveyor_shop.svg';
-import ImgTwo from '../Screenshots/knife_purveyor_contact.svg';
-import MobileOne from '../Screenshots/purveyor_mobile_shop.svg';
-import MobileTwo from '../Screenshots/purveyor_mobile_contact.svg';
+import Home from '../Screenshots/knife_purveyor_screenshot.png';
+import Shop from '../Screenshots/knife_purveyor_shop.png';
+import Search from '../Screenshots/knife_purveyor_search.png';
+import Individual from '../Screenshots/knife_purveyor_knife.png';
+import Cart from '../Screenshots/knife_purveyor_cart.png';
+import SignIn from '../Screenshots/knife_purveyor_signin.png';
+import Contact from '../Screenshots/knife_purveyor_contact.png';
+import MobileHome from '../Screenshots/purveyor_mobile_main.png';
+import MobileShop from '../Screenshots/purveyor_mobile_shop.png';
+import MobileSearch from '../Screenshots/purveyor_mobile_search.png';
+import MobileIndividual from '../Screenshots/purveyor_mobile_knife.png';
+import MobileCart from '../Screenshots/purveyor_mobile_cart.png';
+import MobileSignIn from '../Screenshots/purveyor_mobile_signin.png';
+import MobileContact from '../Screenshots/purveyor_mobile_contact.png';
 import { useEffect } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
 import Knife from '../Screenshots/knife-fill-svgrepo-com.svg';
+import Carousel from '../Carousel/carousel.component';
 
 const KnifePurveyor = () => {
 
@@ -38,12 +49,36 @@ const KnifePurveyor = () => {
                     <p>An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.</p>
                 </div>
                 <div className='purveyor-screenshots animate__animated animate__fadeInUp'>
-                    <div className='purveyor-image-container'>
-                        <img src={`${window.innerWidth > 480 ? ImgOne : MobileOne}`} alt='shop-page' />
-                    </div>
-                    <div className='purveyor-image-caption'>
-                        <p className='caption'>Shop Page</p>
-                    </div>
+                    <Carousel>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Home : MobileHome}`} alt='home-page' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Home Page</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Shop : MobileShop}`} alt='shop-page' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Shop</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Individual : MobileIndividual}`} alt='knife-page' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Individual Item</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Search : MobileSearch}`} alt='search-results' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Search Results</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Cart : MobileCart}`} alt='cart' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Cart</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? SignIn : MobileSignIn}`} alt='sign-in' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Sign In</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='purveyor-image-container'><img src={`${window.innerWidth > 480 ? Contact : MobileContact}`} alt='contact-page' /></div>
+                            <div className='purveyor-image-caption'><p className='caption'>Contact</p></div>
+                        </div>
+                    </Carousel>
                 </div>
                 <AnimationOnScroll animateIn='animate__fadeInLeft' duration={1.5}>
                     <div className='purveyor-paragraphs'>
@@ -52,16 +87,6 @@ const KnifePurveyor = () => {
                     </div>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__fadeInRight' duration={1.5}>
-                    <div className='purveyor-screenshots'>
-                        <div className='purveyor-image-container'>
-                            <img src={`${window.innerWidth > 480 ? ImgTwo : MobileTwo}`} alt='contact-page' />
-                        </div>
-                        <div className='purveyor-image-caption'>
-                            <p className='caption'>Contact Page</p>
-                        </div>
-                    </div>
-                </AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft' duration={1.5}>
                     <div className='purveyor-paragraphs'>
                         <p>As my first big project since beginning my web developer journey, I faced many challenges along the way. For example, when navigating to each knife category from the homepage, the corresponding shop items would load as expected. After re-loading the page, however, an error would indicate that my API data had become undefined. The same thing would occur when trying to filter items by price, knife-maker, etc.</p>
                         <p>But after hours of (metaphorically) banging my head against the wall, I eventually understood the reason behind this error. Every state change in a React app triggers a re-render, thereby causing the website to re-fetch the API data. Since this process is asynchronous, the page loads the DOM before the data is available. To fix this, I added a condition that would display a loading spinner until the data had successfully loaded.</p>

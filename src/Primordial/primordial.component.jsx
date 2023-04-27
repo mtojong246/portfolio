@@ -1,14 +1,19 @@
 import './primordial.styles.scss';
 import { Link } from 'react-router-dom';
-import ImgOne from '../Screenshots/primordial_screenshot.svg';
-import ImgTwo from '../Screenshots/primordial_screenshot2.svg';
-import MobileOne from '../Screenshots/primordial_mobile_main.svg';
-import MobileTwo from '../Screenshots/primordial_mobile_enc.svg';
+import Title from '../Screenshots/primordial_main.png';
+import Home from '../Screenshots/primordial_home.png';
+import Encyclopedia from '../Screenshots/primordial_encyclopedia.png';
+import Settings from '../Screenshots/primordial_settings.png';
+import MobileTitle from '../Screenshots/primordial_mobile_main.png';
+import MobileHome from '../Screenshots/primordial_mobile_home.png'
+import MobileEncyclopedia from '../Screenshots/primordial_mobile_encyclopedia.png';
+import MobileSettings from '../Screenshots/primordial_mobile_settings.png';
 import { useEffect } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
+import Carousel from '../Carousel/carousel.component';
 
 
 const Primordial = () => {
@@ -39,12 +44,24 @@ const Primordial = () => {
                     <p>A simple point-and-click game, inspired by the popular mobile app "Little Alchemy 2".</p>
                 </div>
                 <div className='primordial-screenshots animate__animated animate__fadeInUp'>
-                    <div className='primordial-image-container'>
-                        <img src={`${window.innerWidth > 480 ? ImgOne : MobileOne}`} alt='primordial-screenshot-one' />
-                    </div>
-                    <div className='caption'>
-                        <p>Main Page</p>
-                    </div>
+                    <Carousel>
+                        <div className='carousel'>
+                            <div className='primordial-image-container'><img src={`${window.innerWidth > 480 ? Title : MobileTitle}`} alt='title-page' /></div>
+                            <div className='caption'><p>Title Page</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='primordial-image-container'><img src={`${window.innerWidth > 480 ? Home : MobileHome}`} alt='home-page' /></div>
+                            <div className='caption'><p>Home Page</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='primordial-image-container'><img src={`${window.innerWidth > 480 ? Encyclopedia : MobileEncyclopedia}`} alt='encyclopedia' /></div>
+                            <div className='caption'><p>Encyclopedia</p></div>
+                        </div>
+                        <div className='carousel'>
+                            <div className='primordial-image-container'><img src={`${window.innerWidth > 480 ? Settings : MobileSettings}`} alt='settings' /></div>
+                            <div className='caption'><p>Settings</p></div>
+                        </div>
+                    </Carousel>
                 </div>
                 <AnimationOnScroll animateIn='animate__fadeInLeft'>
                     <div className='primordial-paragraphs'>
@@ -54,16 +71,6 @@ const Primordial = () => {
                     </div>
                 </AnimationOnScroll>
                 <AnimationOnScroll animateIn='animate__fadeInRight'>
-                    <div className='primordial-screenshots'>
-                        <div className='primordial-image-container'>
-                            <img src={`${window.innerWidth > 480 ? ImgTwo : MobileTwo}`} alt='primordial-screenshot-two' />
-                        </div>
-                        <div className='caption'>
-                            <p>Encyclopedia</p>
-                        </div>
-                    </div>
-                </AnimationOnScroll>
-                <AnimationOnScroll animateIn='animate__fadeInLeft'>
                     <div className='primordial-paragraphs'>
                         <p>Drawing inspiration from <a href='https://javascript.info/mouse-drag-and-drop' target="_blank" rel="noopener noreferrer">this blog post</a>, I created a larger “pointer down” event listener, which included all of the logic pertaining to a single drag and drop event. This not only mitigated the visual drawbacks of the Drag and Drop API, but it also allowed for added functionality during the “pointer move” events, such as increasing an icon’s size when another icon was hovered over it. This, however, also came with its own drawbacks. For one, this method relied on manipulating the DOM directly rather than taking advantage of React’s virtual DOM. Also, by placing the event listener outside of a React class component, it was impossible to manage state across components without relying on global variables.</p>
                         <p>But despite this, I am happy that I managed to create an application that appears and functions similarly to the original. This project very much highlighted to me the power of Javascript to create just about anything, and I am excited to see the more complex and creative projects I can build in the future.</p>

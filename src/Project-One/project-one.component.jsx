@@ -2,10 +2,10 @@ import './project-one.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLayerGroup } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import KnifePurveyor from '../Screenshots/knife_purveyor_screenshot.svg';
-import KnifePurveyorPage from '../Screenshots/knife_purveyor_shop.svg';
-import Mobile1 from '../Screenshots/knife_purveyor_mobile.svg';
-import Mobile2 from '../Screenshots/purveyor_mobile_shop.svg';
+import KnifePurveyor from '../Screenshots/knife_purveyor_screenshot.png';
+import KnifePurveyorPage from '../Screenshots/knife_purveyor_shop.png';
+import Mobile1 from '../Screenshots/purveyor_mobile_main.png';
+import Mobile2 from '../Screenshots/purveyor_mobile_shop.png';
 import { Link } from 'react-router-dom';
 import Knife from '../Screenshots/knife-fill-svgrepo-com.svg';
 
@@ -37,7 +37,7 @@ const ProjectOne = () => {
                             <a href={'https://endearing-meringue-a41e20.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
                         </div>
                         <hr />
-                        <span>#React #Sass #Firebase #Stripe #GoogleMapAPI</span>
+                        <span>#React #Firebase #Stripe #GoogleMapAPI</span>
                     </div>
                 </div>
             </AnimationOnScroll>

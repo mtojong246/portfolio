@@ -2,11 +2,11 @@ import './project-two.styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDrumstickBite } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import Pantry from '../Screenshots/pantry_title_screen.svg';
-import PantryPage from '../Screenshots/pantry_screenshot.svg';
+import Pantry from '../Screenshots/pantry_main.png';
+import PantryPage from '../Screenshots/pantry_pantry.png'
 import { Link } from 'react-router-dom';
-import Mobile1 from '../Screenshots/pantry_mobile.svg';
-import Mobile2 from '../Screenshots/pantry_mobile_main.svg'
+import Mobile1 from '../Screenshots/pantry_mobile_main.png';
+import Mobile2 from '../Screenshots/pantry_mobile_pantry.png'
 
 
 const ProjectTwo = () => {
