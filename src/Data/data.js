@@ -6,6 +6,8 @@ import Node from '../Icons/nodedotjs.svg';
 import Psql from '../Icons/postgresql.svg';
 import Firebase from '../Icons/firebase.svg';
 import Figma from '../Icons/figma.svg';
+import Sass from '../Icons/sass.svg';
+import Git from '../Icons/git.svg';
 
 export const tools = [
     {
@@ -15,6 +17,10 @@ export const tools = [
     {
         image: Css,
         label: 'CSS3',
+    },
+    {
+        image: Sass,
+        label: 'Sass',
     },
     {
         image: Js,
@@ -37,7 +43,11 @@ export const tools = [
         label: "Firebase",
     },
     {
+        image: Git,
+        label: "Git"
+    },
+    {
         image: Figma,
         label: "Figma",
-    }
+    },
 ]
