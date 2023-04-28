@@ -29,7 +29,7 @@ const ProjectThree = () => {
                         <p>A simple point-and-click game, inspired by the popular mobile app "Little Alchemy 2".</p>
                         <div className='button-link-container'>
                             <a href={'https://github.com/mtojong246/primordial.git'} target="_blank" rel="noopener noreferrer"><button>Source Code</button></a>
-                            <a href={'https://fascinating-pavlova-aa2ae2.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
+                            <a href={'https://primordial-game.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
                         </div>
                         <hr />
                         <span>#React #Sass</span>

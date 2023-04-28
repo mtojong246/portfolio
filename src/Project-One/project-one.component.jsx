@@ -34,7 +34,7 @@ const ProjectOne = () => {
                         <p>An e-commerce website re-designed for a local knife shop located in Wake Forest, NC.</p>
                         <div className='button-link-container'>
                             <a href={'https://github.com/mtojong246/knife-purveyor.git'} target="_blank" rel="noopener noreferrer"><button>Source Code</button></a>
-                            <a href={'https://endearing-meringue-a41e20.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
+                            <a href={'https://knife-purveyor.netlify.app/'} target="_blank" rel="noopener noreferrer"><button>Website Link</button></a>
                         </div>
                         <hr />
                         <span>#React #Firebase #Stripe #GoogleMapAPI</span>
