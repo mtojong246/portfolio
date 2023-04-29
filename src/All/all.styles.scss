@@ -1,7 +1,7 @@
 .overlay {
     height: 700vh;
     width: 100%;
-    background-color: rgba(86, 98, 149,0.6);
+    background-color: rgba(86, 98, 149,0.7);
     position: absolute;
   }
   
@@ -38,8 +38,17 @@
   
   
 @media screen and (max-width: 480px) {  
+  .overlay {
+    padding-bottom: 25vh;
+    height: 0;
+  }
+
   .logo {
     font-size: 20vw;
+  }
+  
+  .margin {
+    margin-bottom: 5vh;
   }
   
   

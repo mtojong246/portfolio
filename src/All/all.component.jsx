@@ -29,19 +29,19 @@ const All = () => {
         <div className='center'>
           <Home />
         </div>
-        <div className='center long'>
+        <div className={`center ${window.innerWidth > 480 ? '' : 'long margin'}`}>
           <About />
         </div>
-        <div className='center'>
+        <div className={`center ${window.innerWidth > 480 ? '' : 'margin'}`}>
           <Toolkit />
         </div>
-        <div className='center long'>
+        <div className={`center ${window.innerWidth > 480 ? '' : 'long margin'}`}>
           <ProjectOne />
         </div>
-        <div className='center long'>
+        <div className={`center ${window.innerWidth > 480 ? '' : 'long margin'}`}>
           <ProjectTwo />
         </div>
-        <div className='center long'>
+        <div className={`center ${window.innerWidth > 480 ? '' : 'long margin'}`}>
           <ProjectThree />
         </div>
         <div className='center'>
