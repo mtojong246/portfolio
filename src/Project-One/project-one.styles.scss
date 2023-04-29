@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #FFEAC9;
+    color: #fff1db;
     margin-top: 6vw;
 }
 
@@ -15,7 +15,7 @@
 
     hr {
         margin-top: 0;
-        background-color: #FFEAC9;
+        background-color: #fff1db;
         height: 1px;
         border: none;
     }
@@ -101,7 +101,7 @@
     }
 
     a {
-        color: #FFEAC9;
+        color: #fff1db;
     }
 
     a:hover {
@@ -111,7 +111,7 @@
     img {
         height: 1.7vw;
         width: 1.7vw;
-        filter: invert(88%) sepia(22%) saturate(469%) hue-rotate(330deg) brightness(105%) contrast(101%);
+        filter: invert(87%) sepia(18%) saturate(281%) hue-rotate(342deg) brightness(106%) contrast(101%);
     }
 }
 
@@ -121,7 +121,7 @@
 
 .project-one-description {
     padding: 1vw;
-    background-color: #A1B6F3;
+    background-color: #7383b5;
     text-align: left;
     font-size: 1.5vw;
     font-family: 'Abhaya Libre', sans-serif;
@@ -136,7 +136,7 @@
     }
 
     hr {
-        background-color: #FFEAC9;
+        background-color: #fff1db;
         height: 1px;
         border: none;
     }
@@ -187,7 +187,7 @@
             z-index: -1;
           }
           &:hover {
-            color: #A1B6F3;
+            color: #7383b5;
             cursor: pointer;
             &:before {
               width: 100%;
@@ -222,7 +222,7 @@
         #knife {
             height: 10.2vw;
             width: 10.2vw;
-            filter: invert(88%) sepia(22%) saturate(469%) hue-rotate(330deg) brightness(105%) contrast(101%);
+            filter: invert(87%) sepia(18%) saturate(281%) hue-rotate(342deg) brightness(106%) contrast(101%);
         }
 
         

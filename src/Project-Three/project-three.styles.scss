@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #FFEAC9;
+    color: #fff1db;
     margin-top: 6vw;
 }
 
@@ -57,9 +57,9 @@
 .project-three-screenshot {
     position: absolute;
     width: 100%;
-    height: 100%;
-    top: 0;
+    height: 101%;
     left: 0;
+    bottom: 0.1vh;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -104,7 +104,7 @@
 
 .project-three-description {
     padding: 1vw;
-    background-color: #A1B6F3;
+    background-color: #7383b5;
     text-align: left;
     font-size: 1.5vw;
     font-family: 'Abhaya Libre', sans-serif;
@@ -119,7 +119,7 @@
     }
 
     hr {
-        background-color: #FFEAC9;
+        background-color: #fff1db;
         height: 1px;
         border: none;
     }

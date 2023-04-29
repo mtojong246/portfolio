@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    color: #FFEAC9;
+    color: #fff1db;
 
     p {
         font-family: 'Elephant', sans-serif;
@@ -20,7 +20,7 @@
 
     hr {
         margin-top: 0;
-        background-color: #FFEAC9;
+        background-color: #fff1db;
         height: 1px;
         border: none;
     }
@@ -43,11 +43,11 @@
     button {
         font-size: 1.5vw;
         font-family: 'Abhaya Libre', sans-serif;
-        color: #FFEAC9;
+        color: #fff1db;
         border-radius: 20px;
         background: none;
         padding: 0.5vw 1vw;
-        border: 1px solid #FFEAC9;
+        border: 1px solid #fff1db;
         transition: all .3s;
         position: relative;
         overflow: hidden;
@@ -71,7 +71,7 @@
             left: 0;
             width: 0%;
             height: 100%;
-            background-color: #FFEAC9;
+            background-color: #fff1db;
             transition: all .3s;
             border-radius: 20px;
             z-index: -1;

@@ -16,7 +16,7 @@
 .primordial-logo {
     font-size: 5vw;
     font-family: 'Italiana', sans-serif;
-    color: #FFEAC9;
+    color: #fff1db;
 }
 
 .primordial-logo:hover {
@@ -28,16 +28,16 @@
     button {
         font-family: 'Italiana', sans-serif;
         font-size: 2vw;
-        color: #FFEAC9;
+        color: #fff1db;
         background: none;
         padding: 0.5vw 1vw;
         border-radius: 20px;
-        border: 1px solid #FFEAC9;
+        border: 1px solid #fff1db;
     }
 
     button:hover {
         color: rgba(0,0,0,0.5);
-        background-color: #FFEAC9;
+        background-color: #fff1db;
         cursor: pointer;
     }
 
@@ -48,7 +48,7 @@
     font-size: 4vw;
     text-decoration: underline;
     font-family: 'Italiana', sans-serif;
-    color: #FFEAC9;
+    color: #fff1db;
     margin-top: 2vw;
 }
 
@@ -88,7 +88,7 @@
     p {
         font-family: 'Abhaya Libre', sans-serif;
         font-size: 1.4vw;
-        color: #FFEAC9;  
+        color: #fff1db;  
     }
 
     span {
@@ -102,7 +102,7 @@
 .overlay-page {
     padding: 1vh 0;
     width: 100%;
-    background-color: rgba(86, 98, 149,0.7);
+    background-color: rgba(86, 98, 149,0.75);
     position: absolute;
 }
 
@@ -160,7 +160,7 @@
         p {
             font-family: 'Abhaya Libre', sans-serif;
             font-size: 6vw;
-            color: #FFEAC9;  
+            color: #fff1db;  
         }
     
         span {
