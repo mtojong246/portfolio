@@ -12,7 +12,7 @@ import Mobile2 from '../Screenshots/primordial_mobile_home.png';
 const ProjectThree = () => {
     return (
         <div className='project-three-container'>
-            <AnimationOnScroll animateIn='animate__fadeInLeft'>
+            <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'>
                 <div className='project-three-image-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
                     <img className='project-three-image' src={`${window.innerWidth > 480 ? Primordial : Mobile1}`} alt='primordial'/>
@@ -22,7 +22,7 @@ const ProjectThree = () => {
                     </div>
                 </div>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left'>
+            <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left' animateOnce='true'>
                 <div className='project-three-description-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
                     <div className='project-three-description'>

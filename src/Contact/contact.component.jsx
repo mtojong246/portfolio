@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <>
             <div className='contact-container' id="contact">
-                <AnimationOnScroll animateIn='animate__fadeInLeft'>
+                <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'>
                     <div className='contact-title'>
                         <span>My Contact <FontAwesomeIcon icon={faPaperPlane} /></span>
                         <hr />
@@ -17,9 +17,9 @@ const Contact = () => {
                     <p className='email'>mtojong@gmail.com</p>
                 </AnimationOnScroll>
                 <div className='social-media'>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='https://www.linkedin.com/in/melanie-tojong-4b5149158/' target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='https://github.com/mtojong246' target="_blank" rel="noopener noreferrer"><button>Github</button></a></AnimationOnScroll>
-                        <AnimationOnScroll animateIn='animate__fadeInLeft'><a href='mailto:mtojong@gmail.com'><button>Gmail</button></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'><a href='https://www.linkedin.com/in/melanie-tojong-4b5149158/' target="_blank" rel="noopener noreferrer"><button>LinkedIn</button></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'><a href='https://github.com/mtojong246' target="_blank" rel="noopener noreferrer"><button>Github</button></a></AnimationOnScroll>
+                        <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'><a href='mailto:mtojong@gmail.com'><button>Gmail</button></a></AnimationOnScroll>
                 </div>
             </div>
             <div className='footer'>

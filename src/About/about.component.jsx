@@ -8,7 +8,7 @@ import { faPersonHiking } from '@fortawesome/free-solid-svg-icons';
 const About = () => {
     return (
         <div className='about-container' id='about'>
-                <AnimationOnScroll animateIn='animate__fadeInDown' className='animate-about-title'>
+                <AnimationOnScroll animateIn={`${window.innerWidth > 480 ? 'animate__fadeInDown' : 'animate__fadeInLeft'}`} className='animate-about-title' animateOnce='true'>
                     <div className='about-title'>
                         <span>My Journey <span id='so-far'>(So Far)</span> <FontAwesomeIcon icon={faPersonHiking} /></span>
                         <hr />
@@ -19,7 +19,7 @@ const About = () => {
                         <p>Since beginning my journey, I have enjoyed building interactive applications that reflect my personal perspective while also challenging my ability to solve problems <span>efficiently</span> and <span>creatively</span>. To this day, I remain steadfast in my goal of helping others by improving their quality of life and empowering their sense of autonomy in an ever-changing environment.</p>
                     </div>
                 </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__fadeInUp'>
+            <AnimationOnScroll animateIn={`${window.innerWidth > 480 ? 'animate__fadeInUp' : 'animate__fadeInRight'}`} animateOnce='true'>
                 <img src={Headshot} alt='headshot' className='about-image' />
             </AnimationOnScroll>
         </div>

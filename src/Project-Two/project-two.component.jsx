@@ -12,7 +12,7 @@ import Mobile2 from '../Screenshots/pantry_mobile_pantry.png'
 const ProjectTwo = () => {
     return (
         <div className='project-two-container'>
-            <AnimationOnScroll animateIn='animate__fadeInRight'>
+            <AnimationOnScroll animateIn='animate__fadeInRight' animateOnce='true'>
                 <div className='project-two-image-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Pantry <FontAwesomeIcon icon={faDrumstickBite} /></span>
                     <img src={`${window.innerWidth > 480 ? Pantry : Mobile1}`} alt='pantry' className='project-two-image'/>
@@ -22,7 +22,7 @@ const ProjectTwo = () => {
                     </div>
                 </div>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__fadeInLeft' className='animated-right'>
+            <AnimationOnScroll animateIn='animate__fadeInLeft' className='animated-right' animateOnce='true'>
                 <div className='project-two-description-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Pantry <FontAwesomeIcon icon={faDrumstickBite} /></span>
                     <div className='project-two-description'>

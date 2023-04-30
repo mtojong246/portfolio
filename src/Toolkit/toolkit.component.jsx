@@ -8,14 +8,14 @@ const Toolkit = () => {
     return (
         <div className='toolkit-container'> 
             <div className='toolkit-title'>
-                <AnimationOnScroll animateIn='animate__fadeInRight'>
+                <AnimationOnScroll animateIn='animate__fadeInRight' animateOnce='true'>
                     <span>My Toolkit <FontAwesomeIcon icon={faScrewdriverWrench} /></span>
                     <hr />
                 </AnimationOnScroll>
             </div>
             <div className='toolkit'>
             {tools.map(tool => (
-                <AnimationOnScroll animateIn='animate__fadeInLeft' className='tool-animation'>
+                <AnimationOnScroll animateIn='animate__fadeInLeft' className='tool-animation' animateOnce='true'>
                     <div className='tool-label'>
                         <span>{tool.label}</span>
                     </div>

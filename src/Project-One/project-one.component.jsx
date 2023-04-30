@@ -13,7 +13,7 @@ import Knife from '../Screenshots/knife-fill-svgrepo-com.svg';
 const ProjectOne = () => {
     return (
         <div className='project-one-container' id="projects">
-            <AnimationOnScroll animateIn='animate__fadeInLeft' >
+            <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'>
                 <div className='project-one-title'>
                     <span>My Projects <FontAwesomeIcon icon={faLayerGroup} /></span>
                     <hr />
@@ -27,7 +27,7 @@ const ProjectOne = () => {
                     </div>
                 </div>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left'>
+            <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left' animateOnce='true'>
                 <div className='project-one-description-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Knife Purveyor <img src={Knife} alt='knife' style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}/></span>
                     <div className='project-one-description'>

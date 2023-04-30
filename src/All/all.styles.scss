@@ -37,7 +37,13 @@
 
   
   
-@media screen and (max-width: 480px) {  
+@media screen and (max-width: 480px) { 
+  .nav-bar-container {
+    position: absolute;
+    top: 0.8vh;
+    left: 0;
+  }
+  
   .overlay {
     padding-bottom: 25vh;
     height: 0;

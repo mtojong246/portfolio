@@ -121,6 +121,11 @@
 }
 
 @media screen and (max-width: 480px) {
+    .purveyor-nav {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
     
     .purveyor-logo {
         font-size: 20vw;
@@ -138,7 +143,7 @@
     .purveyor-blog-title {
         padding-left: 15vw;
         font-size: 15vw;
-        margin-top: 24vw;
+        margin-top: 2vh;
     
         img {
             height: 15vw;
