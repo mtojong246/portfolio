@@ -1,6 +1,6 @@
 import './about.styles.scss';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import Headshot from '../Screenshots/headshot.jpg';
+import Headshot from '../Screenshots/new-headshot.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPersonHiking } from '@fortawesome/free-solid-svg-icons';
 
