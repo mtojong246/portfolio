@@ -1,0 +1,57 @@
+.pantry-modal-container, .pantry-modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+.pantry-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pantry-modal-overlay {
+    background: rgba(0,0,0,0.6);
+}
+
+.pantry-modal-content {
+    position: relative;
+    z-index: 3;
+    width: 70%;
+
+    video {
+        height: 70%;
+        width: 100%;
+    }
+}
+
+.popup {
+    animation: popup 300ms ease-in-out forwards;
+}
+
+.popupClose {
+    animation: popupClose 300ms ease-in-out forwards;
+}
+
+@keyframes popup {
+    0%{
+      transform: scale(0);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
+
+@keyframes popupClose {
+    0%{
+        transform: scale(1);
+      }
+      100%{
+        transform: scale(0);
+      }
+}

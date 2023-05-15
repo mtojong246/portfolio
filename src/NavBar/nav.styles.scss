@@ -1,9 +1,8 @@
 .nav-bar-options {
-    width: 25vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2vw 2vw 0 0;
+    gap: 2rem;
     
     span {
         position: relative;
@@ -35,7 +34,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     .nav-bar-options {
         display: none;
     }

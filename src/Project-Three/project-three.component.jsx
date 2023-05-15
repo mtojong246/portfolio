@@ -3,28 +3,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlask } from '@fortawesome/free-solid-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import Primordial from '../Screenshots/primordial_main.png';
-import PrimordialPage from '../Screenshots/primordial_home.png';
-import { Link } from 'react-router-dom';
 import Mobile1 from '../Screenshots/primordial_mobile_main.png';
-import Mobile2 from '../Screenshots/primordial_mobile_home.png';
+import { useState } from 'react';
+import PrimordialModal from '../Primordial-Modal/primordial-modal.component';
 
 
 const ProjectThree = () => {
+    const [ isModalOpen, setIsModalOpen ] = useState(false);
+
+    const toggleModal = () => setIsModalOpen(!isModalOpen);
+
     return (
+        <>
         <div className='project-three-container'>
             <AnimationOnScroll animateIn='animate__fadeInLeft' animateOnce='true'>
                 <div className='project-three-image-container'>
                     <span style={{ display: `${window.innerWidth > 480 ? 'none' : 'inline-block'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
                     <img className='project-three-image' src={`${window.innerWidth > 480 ? Primordial : Mobile1}`} alt='primordial'/>
-                    <img className='project-three-screenshot' src={`${window.innerWidth > 480 ? PrimordialPage : Mobile2}`} alt='primordial-main' />
                     <div className='overlay-three'>
-                        <Link to='/primordial'><button>Learn More</button></Link>
+                        <button onClick={toggleModal}>View Demo</button>
                     </div>
                 </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn='animate__fadeInRight' className='animated-left' animateOnce='true'>
                 <div className='project-three-description-container'>
-                    <span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span>
+                    <div className='description-title'><span style={{ display: `${window.innerWidth > 480 ? 'inline-block' : 'none'}`}}>Primordial <FontAwesomeIcon icon={faFlask} /></span></div>
                     <div className='project-three-description'>
                         <p>A simple point-and-click game, inspired by the popular mobile app "Little Alchemy 2".</p>
                         <div className='button-link-container'>
@@ -37,6 +40,8 @@ const ProjectThree = () => {
                 </div>
             </AnimationOnScroll>
         </div>
+        <PrimordialModal toggleModal={toggleModal} isModalOpen={isModalOpen}/>
+        </>
     )
 }
 

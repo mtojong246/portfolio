@@ -1,5 +1,6 @@
 .home-container {
     text-align: left;
+    padding: 0 5rem;
 
     p {
         margin: 0;
@@ -8,12 +9,12 @@
 
     button {
         font-family: 'Italiana', sans-serif;
-        font-size: 2vw;
+        font-size: 1.5rem;
         color: #fff1db;
         background: none;
         border: 1px solid #fff1db;
-        padding: 0 0.75vw 0.25vw 0.75vw;
-        margin-top: 2vw;
+        padding: 0.25rem 1rem;
+        margin-top: 1rem;
         z-index: 2;
         position: relative;
         transition: all .3s;
@@ -51,12 +52,12 @@
 }
 
 .home-title {
-    font-size: 8vw;
+    font-size: 6rem;
     font-family: 'Elephant', sans-serif;
 }
 
 .home-description {
-    font-size: 2vw;
+    font-size: 1.5rem;
     font-family: 'Abhaya Libre', sans-serif;
 
     span {
@@ -67,52 +68,52 @@
 
 .scroll-arrow {
     position: absolute;
-    bottom: 1.5vh;
+    top: 90vh;
     color: #F7F7F7;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: 'Abhaya Libre', sans-serif;
     text-align: center;
     z-index: 1;
 
     p {
-        margin: 0 0 0.5vh 0;
+        margin: 0 0 0.5rem 0;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .home-title-container {
-        margin: 4vw 0;
+@media screen and (max-width: 1024px) {
+    .home-title {
+        font-size: 4.5rem;
     }
+}
 
+@media screen and (max-width: 768px) {
     .home-container {
         text-align: center;
-
-        button {
-            font-size: 6vw;
-            padding: 0 2vw 1vw 2vw;
-            margin-top: 6vw;
-        }
+        
 
         p {
-            padding: 0 10vw;
+            margin: 1rem 0;
         }
+
+        button {
+            margin-top: 1rem;
+        }
+    }
+
+    .home-description {
+        font-size: 1rem;
     }
 
     .home-title {
-        font-size: 18vw;
-        font-family: 'Italiana', sans-serif;
+        font-family: 'Elephant', 'Italiana', sans-serif;
+        font-size: 4rem;
     }
-    
-    .home-description {
-        font-size: 6vw;
 
-        span {
-            font-family: 'Italiana', sans-serif;
-        }
-    }
-    
-    .scroll-arrow {
-        font-size: 4vw;
+}
 
+@media screen and (max-width: 600px) {
+    .home-title {
+        font-family: 'Elephant', 'Italiana', sans-serif;
+        font-size: 3rem;
     }
 }

@@ -1,5 +1,4 @@
 .overlay {
-    height: 700vh;
     width: 100%;
     background-color: rgba(86, 98, 149,0.75);
     position: absolute;
@@ -8,7 +7,7 @@
   
   .nav-bar-container {
     font-family: 'Italiana', sans-serif;
-    font-size: 2vw;
+    font-size: 2rem;
     color: #fff1db;
   
     display: flex;
@@ -17,11 +16,11 @@
     position: fixed;
     z-index: 2;
     width: 100%;
+    padding: 1rem 1rem 0 1rem;
   }
   
   .logo {
-    font-size: 5vw;
-    padding: 2vw 0 0 2vw;
+    font-size: 4rem;
   }
   
   .logo:hover {
@@ -35,49 +34,20 @@
     align-items: center;
   }
 
+  .all-container {
+    padding: 10rem 5rem;
+    text-align: center;
+  }
+
   
   
 @media screen and (max-width: 480px) { 
   .nav-bar-container {
     position: absolute;
-    top: 0.8vh;
+    top: 0;
     left: 0;
   }
-  
-  .overlay {
-    padding-bottom: 25vh;
-    height: 0;
   }
-
-  .logo {
-    font-size: 20vw;
-  }
-  
-  .margin {
-    margin-bottom: 5vh;
-  }
-  
-  
-  .center {
-    height: 100vh;
-  }
-
-  .long {
-    height: 150vh;
-  }
-
-  .longer {
-    height: 200vh;
-  }
-
-  .short {
-    height: 80vh;
-  }
-
-  .overlay {
-    height: 900vh;
-  }
-}
   
   
   
