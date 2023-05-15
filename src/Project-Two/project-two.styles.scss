@@ -155,7 +155,7 @@
 
     .project-two-image-container span {
         font-size: 2rem;
-        font-family: 'Elephant', sans-serif;
+        font-family: 'Italiana', sans-serif;
     }    
 
     .project-two-image {
@@ -168,5 +168,10 @@
 
     .overlay-two {
         top: 3.55rem;
+
+        button {
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+        }
     }
 }

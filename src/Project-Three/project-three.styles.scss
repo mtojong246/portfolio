@@ -156,7 +156,7 @@
 
     .project-three-image-container span {
         font-size: 2rem;
-        font-family: 'Elephant', sans-serif;
+        font-family: 'Italiana', sans-serif;
     }    
 
     .project-three-image {
@@ -170,6 +170,11 @@
     .project-three-image-container {
         .overlay-three {
             top: 3.55rem;
+
+            button {
+                font-size: 1rem;
+                padding: 1rem 1.5rem;
+            }
         }
 
     }

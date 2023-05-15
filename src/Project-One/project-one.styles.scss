@@ -232,6 +232,7 @@
         hr {
             width: 100%;
         }
+        
 }
 
     
@@ -248,7 +249,7 @@
 
     .project-one-image-container span {
         font-size: 2rem;
-        font-family: 'Elephant', sans-serif;
+        font-family: 'Italiana', sans-serif;
     }    
 
     #knife {
@@ -263,5 +264,14 @@
 
     .overlay-one {
         top: 3.6rem;
+
+        button {
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+        }
+    }
+
+    .project-one-title {
+        font-family: 'Italiana', sans-serif;
     }
 }

@@ -113,7 +113,13 @@
 
 @media screen and (max-width: 600px) {
     .home-title {
-        font-family: 'Elephant', 'Italiana', sans-serif;
+        font-family: 'Italiana', sans-serif;
         font-size: 3rem;
+    }
+
+    .home-description {
+        span {
+            font-family: 'Italiana', sans-serif;
+        }
     }
 }
