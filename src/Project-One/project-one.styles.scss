@@ -83,13 +83,12 @@
 }
 
 .project-one-description-container {
-    align-self: flex-end;
     width: 40rem;
     position: absolute;
     z-index: 1;
-    bottom: -22rem;
-    right: 0rem;
-
+    right: 0;
+    top: 10rem;
+    
     span {
         font-size: 2rem;
         font-family: 'Elephant', sans-serif;
