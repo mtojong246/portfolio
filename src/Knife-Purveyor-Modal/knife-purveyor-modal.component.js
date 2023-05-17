@@ -1,5 +1,5 @@
 import './knife-purveyor-modal.styles.scss';
-import KPDemo from '../Screenshots/Knife-Purveyor-Demo.mp4';
+import KPDemo from '../Screenshots/Knife-Purveyor-Demo-new.mp4';
 
 const KnifePurveyorModal = ({ isModalOpen, toggleModal }) => {
     return(
